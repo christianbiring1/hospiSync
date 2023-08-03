@@ -28,7 +28,7 @@ const SignUpForm = () => {
 
   const validate = () => {
     const result = Joi.validate(account, schema, {abortEarly: false})
-    if(!result.errors) return;
+    if(!result.error) return;
     const errors = {};
     for(let item of result.error.details) errors[item.path[0]] = item.message;
     return errors

@@ -36,7 +36,8 @@
 }
 
 .login__form {
-  margin: auto;
+  /* margin: auto; */
+  width: 80%;
 }
 
 .login__form input {

@@ -2,7 +2,13 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import LoginIcon from '@mui/icons-material/Login';
 import "bootstrap/dist/css/bootstrap.css"
 import "../styles/sign_up.css"
+import { useState } from 'react';
 const SignUpForm = () => {
+
+  const [account, setAccount] = useState({
+    username: "",
+    password: ""
+  });
 
   const styles = {
     cursor: "help",
@@ -11,6 +17,15 @@ const SignUpForm = () => {
   }
 
   const period_year = new Date().getFullYear();
+
+  const handleChange = ({currentTarget: input}) => {
+    const {name, value} = input;
+    setAccount(prev => {
+      return {...prev, [name]: value }
+    })
+
+    console.log(account)
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -33,14 +48,29 @@ const SignUpForm = () => {
           </div>
           <form onSubmit={handleSubmit} className="login__form">
             <div className="mb-3">
-              <label htmlFor="name" className="form-label">Name</label>
+              <label htmlFor="username" className="form-label">Name</label>
               <HelpOutlineIcon style={styles} titleAccess='This is the name you have used to register'/>
-              <input type="email" className="form-control" id="name" autoFocus/>
+              <input
+                type="text"
+                value={account.username}
+                onChange={handleChange}
+                name='username'
+                id="username"
+                className="form-control"
+                autoFocus
+              />
            </div>
            <div className="mb-3">
              <label htmlFor="password" className="form-label">Password</label>
              <HelpOutlineIcon style={styles} titleAccess='Your Password'/>
-             <input type="password" className="form-control" id="password" />
+             <input
+               type="password"
+               value={account.password}
+               onChange={handleChange}
+               name='password'
+               id="password"
+               className="form-control"
+              />
             </div>
            <button type="submit" className="btn btn-primary mt-3">Connexion</button>
           </form>

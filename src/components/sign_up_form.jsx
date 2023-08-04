@@ -22,7 +22,7 @@ const SignUpForm = () => {
   const period_year = new Date().getFullYear();
 
   const schema = {
-    username: Joi.string().required().label("Username"),
+    username: Joi.string().required().label("Name"),
     password: Joi.string().required().label("Password")
   }
 

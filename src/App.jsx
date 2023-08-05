@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import SignUpForm from './components/sign_up_form'
 import Sidebar from './components/sidebar'
 import Activities from './components/pages/activities';
@@ -10,17 +10,17 @@ import './App.css'
 function App() {
 
   return (
-    <BrowserRouter>
-      {/* <Sidebar /> */}
+    <>
+      <Sidebar />
       <Routes>
-        <Route path="/" element={<Sidebar />} />
+        {/* <Route path="/" element={<Sidebar />} /> */}
         <Route path="/login" element={<SignUpForm />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/dashboard" element={<DashBoard />} />
         <Route path="/finances" element={<Finances />} />
         <Route path="/patients" element={<Patients />} />
       </Routes>
-    </BrowserRouter>
+    </>
   )
 }
 

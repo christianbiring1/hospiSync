@@ -16,9 +16,9 @@ function App() {
         {/* <Route path="/" element={<Sidebar />} /> */}
         <Route path="/login" element={<SignUpForm />} />
         <Route path="/activities" element={<Activities />} />
-        <Route path="/dashboard" element={<DashBoard />} />
         <Route path="/finances" element={<Finances />} />
         <Route path="/patients" element={<Patients />} />
+        <Route path="/" element={<DashBoard />} />
       </Routes>
     </>
   )

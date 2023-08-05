@@ -1,33 +1,33 @@
-/* eslint-disable */
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SickIcon from '@mui/icons-material/Sick';
 import { NavLink } from 'react-router-dom';
-const Sidebar = ({children}) => {
+const Sidebar = () => {
 
   const menuItem = [
     {
-      path: '/dashboard',
-      icon: DashboardIcon,
+      path: '/',
+      icon: <DashboardIcon />,
       label: 'Dashboard'
     }, 
     {
       path: '/activities',
-      icon: EventAvailableIcon,
+      icon: <EventAvailableIcon />,
       label: 'Activities'
     },
     {
       path: '/finances',
-      icon: AccountBalanceIcon,
+      icon: <AccountBalanceIcon />,
       label: 'Finances'
     },
     {
       path: '/patients',
-      icon: SickIcon,
+      icon: <SickIcon />,
       label: 'Patients'
     }
   ]
+
   return (
     <>
     <div>
@@ -38,7 +38,6 @@ const Sidebar = ({children}) => {
         </NavLink>
       ))}
     </div>
-    <main>{children}</main>
     </>
   );
 }

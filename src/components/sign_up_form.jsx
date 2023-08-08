@@ -52,6 +52,7 @@ const SignUpForm = () => {
 
     // Call the server
     console.log('Form submited!')
+    window.location = '/'
   }
 
   const handleChange = ({currentTarget: input}) => {

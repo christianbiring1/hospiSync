@@ -3,14 +3,16 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SickIcon from '@mui/icons-material/Sick';
-// import LogoutTwoToneIcon from '@mui/icons-material/LogoutTwoTone';
+import LogoutTwoToneIcon from '@mui/icons-material/LogoutTwoTone';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import CloseIcon from '@mui/icons-material/Close';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import '../styles/sidebar.css'
 const Sidebar = () => {
+
+  const location = useLocation();
 
   const [isOpen, setIsOpen] = useState(true);
 
@@ -46,11 +48,11 @@ const Sidebar = () => {
       icon: <SickIcon />,
       label: 'Patients'
     },
-    // {
-    //   path: '/login',
-    //   icon: <LogoutTwoToneIcon />,
-    //   label: 'LogOut'
-    // }
+    {
+      path: '/login',
+      icon: <LogoutTwoToneIcon />,
+      label: 'LogOut'
+    }
   ];
 
   const logoActive = {
@@ -65,7 +67,7 @@ const Sidebar = () => {
 
   return (
     <>
-    <div className={isOpen ? 'sidebar' : 'sidebar active'}>
+    <div className={isOpen ? 'sidebar' : 'sidebar active'} style={{display: location.pathname === '/login' ? 'none' : 'block'}}>
       <div className={isOpen ? "logo_container side_flex" : "profil_container side_flex active"}>
         <LocalHospitalIcon style={isOpen ? logo : logoActive}/>
         <h2 className='title' style={{display: isOpen ? "block" : 'none'}}>HospiSync</h2>

@@ -23,10 +23,11 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 3rem;
+
   /* margin: 0 auto; */
 }
 
-.logo__container p{
+.logo__container p {
   font-weight: 100;
   font-size: 0.9rem;
 }
@@ -63,6 +64,7 @@
 .login__footer {
   display: flex;
   flex-direction: column;
+
   /* opacity: 0.5; */
   font-weight: 200;
 }

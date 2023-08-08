@@ -1,0 +1,40 @@
+.sidebar {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  width: 15rem;
+  height: 100vh;
+  overflow: auto;
+}
+
+.side_flex {
+  display: flex;
+  align-items: center;
+}
+
+.profil_container {
+ padding-top: 2rem;
+}
+
+.logo_container .title {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.profil_content p {
+  margin: 0;
+  color: darkgray;
+  font-size: 0.8rem;
+}
+
+.burger_container {
+  position: absolute;
+  right: 1rem;
+  top: calc(9rem / 1.5);
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+}

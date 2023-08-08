@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import SignUpForm from './components/sign_up_form'
+// import SignUpForm from './components/sign_up_form'
 import Sidebar from './components/sidebar'
 import Activities from './components/pages/activities';
 import DashBoard from './components/pages/dashboard';
@@ -10,16 +10,16 @@ import './App.css'
 function App() {
 
   return (
-    <>
+    <div className='app_container'>
       <Sidebar />
       <Routes>
-        <Route path="/login" element={<SignUpForm />} />
+        {/* <Route path="/login" element={<SignUpForm />} /> */}
         <Route path="/activities" element={<Activities />} />
         <Route path="/finances" element={<Finances />} />
         <Route path="/patients" element={<Patients />} />
         <Route path="/" element={<DashBoard />} />
       </Routes>
-    </>
+    </div>
   )
 }
 

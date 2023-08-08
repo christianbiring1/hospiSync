@@ -51,29 +51,43 @@ const Sidebar = () => {
     //   icon: <LogoutTwoToneIcon />,
     //   label: 'LogOut'
     // }
-  ]
+  ];
+
+  const logoActive = {
+    width: '5rem',
+    height: 'auto'
+  };
+
+  const logo = {
+    width: '3rem',
+    height: 'auto'
+  }
 
   return (
     <>
-    <div className='sidebar'>
-      <div className="logo_container side_flex">
-        <LocalHospitalIcon />
-        <h2 className='title'>HospiSync</h2>
+    <div className={isOpen ? 'sidebar' : 'sidebar active'}>
+      <div className={isOpen ? "logo_container side_flex" : "profil_container side_flex active"}>
+        <LocalHospitalIcon style={isOpen ? logo : logoActive}/>
+        <h2 className='title' style={{display: isOpen ? "block" : 'none'}}>HospiSync</h2>
       </div>
       <div className="burger_container" onClick={handleToggleMenu}>
         {isOpen ? <MenuOpenIcon style={styles}/> : <CloseIcon style={styles}/>}
       </div>
-      <div className="profil_container side_flex">
-        <AccountCircleIcon style={{width: 'auto', height: '3rem'}}/>
-        <div className="profil_content">
+      <div className={isOpen ? "profil_container side_flex" : "profil_container side_flex active"}>
+        <AccountCircleIcon style={{width: '3rem', height: 'auto'}}/>
+        <div className="profil_content" style={{display: isOpen ? 'block' : 'none'}}>
           <p className="name">Hello, ...</p>
           <p className="email">username@gmail.com</p>
         </div>
       </div>
       {menuItem.map((item) => (
         <NavLink to={item.path} key={item.label}>
-          <div>{item.icon}</div>
-          <div>{item.label}</div>
+          <ul className={isOpen ? '' : 'active'}>
+            <li className={isOpen ? '' : 'active'}>
+              <span className='icon'>{item.icon}</span>
+              <span style={{display: isOpen ? 'inline' : 'none'}}>{item.label}</span>
+            </li>
+          </ul>
         </NavLink>
       ))}
     </div>

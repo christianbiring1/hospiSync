@@ -3,10 +3,16 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 2rem;
-  width: 15rem;
+  padding: 3rem 2rem;
   height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar.active {
+  width: 8rem;
+  padding: 1rem;
+  padding: 5rem 0;
 }
 
 .side_flex {
@@ -14,27 +20,69 @@
   align-items: center;
 }
 
+.side_flex.active {
+  justify-content: center;
+}
+
 .profil_container {
- padding-top: 2rem;
+ padding: 3rem 0;
 }
 
 .logo_container .title {
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0;
-  margin: 0;
+  margin: 0 1rem;
 }
 
 .profil_content p {
   margin: 0;
   color: darkgray;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .burger_container {
   position: absolute;
-  right: 1rem;
-  top: calc(9rem / 1.5);
-  z-index: 1;
-  width: 2rem;
-  height: 2rem;
+  right: 0rem;
+  top: 0rem;
+  z-index: 9999;
+  width: 3rem;
+  height: 3rem;
+  /* background-color: aqua; */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul.active {
+  justify-content: center;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: .5rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+ul li.active {
+  justify-content: center;
+}
+
+ul li:hover {
+  background-color: rgba(211, 211, 211, .5);
+  border-radius: 0.6rem;
+}
+
+li .icon {
+  padding: 0 1rem 0 0;
+}
+
+a {
+  text-decoration: none;
 }

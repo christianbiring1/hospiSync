@@ -13,7 +13,6 @@ function App() {
     <>
       <Sidebar />
       <Routes>
-        {/* <Route path="/" element={<Sidebar />} /> */}
         <Route path="/login" element={<SignUpForm />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/finances" element={<Finances />} />

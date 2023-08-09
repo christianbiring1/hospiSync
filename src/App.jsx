@@ -1,16 +1,15 @@
-import { Routes, Route } from 'react-router-dom'
-import SignUpForm from './components/sign_up_form'
-import Sidebar from './components/sidebar'
+import { Routes, Route } from 'react-router-dom';
+import SignUpForm from './components/sign_up_form';
+import Sidebar from './components/sidebar';
 import Activities from './components/pages/activities';
 import DashBoard from './components/pages/dashboard';
 import Finances from './components/pages/finances';
 import Patients from './components/pages/patients';
-import './App.css'
+import './App.css';
 
 function App() {
-
   return (
-    <div className='app_container'>
+    <div className="app_container">
       <Sidebar />
       <Routes>
         <Route path="/login" element={<SignUpForm />} />
@@ -20,7 +19,7 @@ function App() {
         <Route path="/" element={<DashBoard />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

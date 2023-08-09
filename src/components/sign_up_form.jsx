@@ -22,8 +22,8 @@ const SignUpForm = () => {
   const period_year = new Date().getFullYear();
 
   const schema = {
-    username: Joi.string().min(3).required().label("Name"),
-    password: Joi.string().min(6).required().label("Password")
+    username: Joi.string().trim().min(3).required().label("Name"),
+    password: Joi.string().trim().min(6).required().label("Password")
   }
 
   const validate = () => {
@@ -73,7 +73,7 @@ const SignUpForm = () => {
         </div>
         <div className="form__container">
           <div>
-            <LoginIcon />
+            <LoginIcon style={{width: '3rem', height: 'auto'}}/>
           </div>
           <div className="logo__container">
             <h4>Logo Will go here</h4>
@@ -92,7 +92,7 @@ const SignUpForm = () => {
                 className="form-control"
                 autoFocus
               />
-              {allErrors.username && <div className='alert alert-danger fw-lighter error__message'>{allErrors.username}</div>}
+              {allErrors.username && <div className='text-danger error__message'>{allErrors.username}</div>}
            </div>
            <div className="mb-3">
              <label htmlFor="password" className="form-label">Password</label>
@@ -106,8 +106,8 @@ const SignUpForm = () => {
                className="form-control"
               />
             </div>
-            {allErrors.password && <div className='alert alert-danger fw-lighter error__message'>{allErrors.password}</div>}
-           <button type="submit" className="btn btn-primary mt-3">Connexion</button>
+            {allErrors.password && <div className='text-danger error__message'>{allErrors.password}</div>}
+           <button type="submit" className="btn btn-primary mt-3" disabled={validate()}>Connexion</button>
           </form>
           <div className="login__footer">
             <span>&copy;{period_year} {' '} HospiSynch</span>

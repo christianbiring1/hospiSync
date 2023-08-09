@@ -3,10 +3,10 @@
   display: grid;
   grid-template-columns: 75% 25%;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   height: 100vh;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .hero__container {
@@ -21,7 +21,7 @@
 .form__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 3rem;
 
   /* margin: 0 auto; */
@@ -29,7 +29,8 @@
 
 .logo__container p {
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
+  width: 70%;
 }
 
 .login__form {
@@ -45,6 +46,7 @@
   color: #343434;
   border: 1px solid rgba(53, 51, 51, 0.3);
   border-radius: 6px;
+  font-size: 1.4rem;
 }
 
 .login__form input:focus,
@@ -59,18 +61,18 @@
   width: 100%;
   border: 1px solid blue;
   border-radius: 6px;
+  font-size: 1.4rem;
 }
 
 .login__footer {
   display: flex;
   flex-direction: column;
-
-  /* opacity: 0.5; */
   font-weight: 200;
+  margin-top: 10rem;
 }
 
 .error__message {
-  font-size: 0.7rem;
-  padding: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0 0.7rem;
   margin: 0;
 }

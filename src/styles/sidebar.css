@@ -3,7 +3,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 3rem 2rem;
+  padding: 3rem 0.5rem;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -76,7 +76,7 @@ ul li {
   margin: 0.5rem 0 0;
   padding: 1rem;
   width: 100%;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
 }
 
 ul li.active {
@@ -97,6 +97,10 @@ ul li:hover {
 
 li .icon {
   padding: 0 1rem 0 0;
+}
+
+li .label {
+  font-size: 1.3rem;
 }
 
 a {

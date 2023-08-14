@@ -123,7 +123,7 @@ const Sidebar = () => {
             <ul className={isOpen ? '' : 'active'}>
               <li className={isOpen ? '' : 'active'}>
                 <span className="icon">{item.icon}</span>
-                <span style={{ display: isOpen ? 'inline' : 'none' }}>{item.label}</span>
+                <span className="label" style={{ display: isOpen ? 'inline' : 'none' }}>{item.label}</span>
               </li>
             </ul>
           </NavLink>

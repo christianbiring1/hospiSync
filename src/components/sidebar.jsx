@@ -8,6 +8,12 @@ import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import CloseIcon from '@mui/icons-material/Close';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import GroupsIcon from '@mui/icons-material/Groups';
+import PersonIcon from '@mui/icons-material/Person';
+import SettingsIcon from '@mui/icons-material/Settings';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import { NavLink, useLocation } from 'react-router-dom';
 import '../styles/sidebar.css';
 
@@ -34,9 +40,14 @@ const Sidebar = () => {
       label: 'Dashboard',
     },
     {
-      path: '/activities',
-      icon: <EventAvailableIcon />,
-      label: 'Activities',
+      path: '/patients',
+      icon: <SickIcon />,
+      label: 'Patients',
+    },
+    {
+      path: '/staff',
+      icon: <GroupsIcon />,
+      label: 'Staffs',
     },
     {
       path: '/finances',
@@ -44,9 +55,34 @@ const Sidebar = () => {
       label: 'Finances',
     },
     {
-      path: '/patients',
-      icon: <SickIcon />,
-      label: 'Patients',
+      path: '/activities',
+      icon: <EventAvailableIcon />,
+      label: 'Events',
+    },
+    {
+      path: '/profil',
+      icon: <PersonIcon />,
+      label: 'Profil',
+    },
+    {
+      path: '/settings',
+      icon: <SettingsIcon />,
+      label: 'Settings',
+    },
+    {
+      path: '/faqs',
+      icon: <HelpOutlineIcon />,
+      label: 'FAQS and Announcements',
+    },
+    {
+      path: '/support',
+      icon: <SupportAgentIcon />,
+      label: 'Get Help',
+    },
+    {
+      path: '/guide',
+      icon: <LocalLibraryIcon />,
+      label: 'User HandBook',
     },
     {
       path: '/login',

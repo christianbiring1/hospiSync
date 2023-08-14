@@ -13,9 +13,9 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path="/login" element={<SignUpForm />} />
-        <Route path="/activities" element={<Activities />} />
-        <Route path="/finances" element={<Finances />} />
         <Route path="/patients" element={<Patients />} />
+        <Route path="/finances" element={<Finances />} />
+        <Route path="/activities" element={<Activities />} />
         <Route path="/" element={<DashBoard />} />
       </Routes>
     </div>

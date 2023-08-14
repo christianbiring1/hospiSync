@@ -1,6 +1,6 @@
 const Support = () => (
   <div className="page_content">
-    <h1>This is the Staff members Pages</h1>
+    <h1>This is the Customer Support Pages</h1>
   </div>
 );
 

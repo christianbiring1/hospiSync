@@ -1,6 +1,7 @@
 /* eslint-disable */
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import LoginIcon from '@mui/icons-material/Login';
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import Joi from 'joi-browser';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/sign_up.css';
@@ -19,6 +20,12 @@ const SignUpForm = () => {
     fontSize: '18px',
     color: 'gray',
   };
+
+  const logo = {
+    width: '5rem',
+    height: 'auto',
+    color: '#2645b7',
+  }
 
   const periodYear = new Date().getFullYear();
 
@@ -75,7 +82,10 @@ const SignUpForm = () => {
           <LoginIcon style={{ width: '3rem', height: 'auto' }} />
         </div>
         <div className="logo__container">
-          <h4>Logo Will go here</h4>
+          <h1 className='logo'>
+            <LocalHospitalIcon style={logo}/>
+            HospiSync
+          </h1>
           <p>To access HospiSync you must provide the following informations.</p>
         </div>
         <form onSubmit={handleSubmit} className="login__form">
@@ -118,9 +128,9 @@ const SignUpForm = () => {
             HospiSynch
           </span>
           <span className="">
-            Designed by
+            Developed by
             {' '}
-            <small className="text-primary">Christian Biringanine</small>
+            <small className="text-primary fw-light">Christian Biringanine</small>
           </span>
         </div>
       </div>

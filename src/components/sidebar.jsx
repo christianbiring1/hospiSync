@@ -94,11 +94,13 @@ const Sidebar = () => {
   const logoActive = {
     width: '5rem',
     height: 'auto',
+    color: '#2645b7',
   };
 
   const logo = {
     width: '3rem',
     height: 'auto',
+    color: '#2645b7',
   };
 
   return (

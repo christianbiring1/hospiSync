@@ -1,4 +1,24 @@
-
 body {
   margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* width: 100vw;
+  height: 100vh;
+  overflow: hidden; */
+}
+
+.app_container {
+  /* display: flex; */
+}
+
+.page_content {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  /* width: 100vw; */
+  background-color: #f5f7fb;
+  z-index: 1;
 }

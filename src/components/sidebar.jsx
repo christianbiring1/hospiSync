@@ -6,7 +6,7 @@ import SickIcon from '@mui/icons-material/Sick';
 import LogoutTwoToneIcon from '@mui/icons-material/LogoutTwoTone';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import CloseIcon from '@mui/icons-material/Close';
+// import CloseIcon from '@mui/icons-material/Close';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import GroupsIcon from '@mui/icons-material/Groups';
 import PersonIcon from '@mui/icons-material/Person';
@@ -111,7 +111,7 @@ const Sidebar = () => {
           <h2 className="title" style={{ display: isOpen ? 'block' : 'none' }}>HospiSync</h2>
         </div>
         <button type="button" className="burger_container" onClick={handleToggleMenu}>
-          {isOpen ? <MenuOpenIcon style={styles} /> : <CloseIcon style={styles} />}
+          <MenuOpenIcon style={styles} />
         </button>
         <div className={isOpen ? 'profil_container side_flex' : 'profil_container side_flex active'}>
           <AccountCircleIcon style={{ width: '3rem', height: 'auto' }} />

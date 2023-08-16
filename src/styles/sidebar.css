@@ -12,8 +12,7 @@
 
 .sidebar.active {
   width: 8rem;
-  padding: 1rem;
-  padding: 5rem 0;
+  padding: 3rem 0;
   transition: 0.6s all;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .profil_container {
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem 2rem;
 }
 
 .logo_container .title {
@@ -38,8 +37,10 @@
   transition: 0.6s all;
   background-image: linear-gradient(45deg, #2645b7, #f3f5f1);
   background-repeat: repeat;
+  /* stylelint-disable */
   background-clip: text;
   -webkit-background-clip: text;
+  /* stylelint-enable */
   -webkit-text-fill-color: transparent;
 }
 
@@ -88,7 +89,7 @@ ul li.active {
 }
 
 ul li:hover {
-  background-color: #f5f7fb;
+  background-color: #f0f0f0;
   border-radius: 0.6rem;
   transition: 0.6s all;
 }

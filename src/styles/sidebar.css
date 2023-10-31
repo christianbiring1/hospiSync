@@ -11,7 +11,7 @@
 }
 
 .sidebar.active {
-  width: 8rem;
+  width: --sidebar-space;
   padding: 3rem 0;
   transition: 0.6s all;
 }

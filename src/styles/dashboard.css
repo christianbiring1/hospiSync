@@ -1,0 +1,28 @@
+.dashboard_container {
+  display: grid;
+  grid-template-columns: 78% 20%;
+  gap: 2rem;
+}
+
+.room-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: aliceblue;
+  background-color: blue;
+  padding: 2rem 1rem;
+}
+
+.room-nav {
+}
+
+.room-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.room-nav ul li {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  padding: 0;
+}

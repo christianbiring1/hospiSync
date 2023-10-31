@@ -1,5 +1,5 @@
 const FAQs = () => (
-  <div className="page_content">
+  <div className="">
     <h1>This is the FAQs page</h1>
   </div>
 );

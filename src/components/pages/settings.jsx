@@ -1,5 +1,5 @@
 const Settings = () => (
-  <div className="page_content">
+  <div className="">
     <h1>This is the Settings Page</h1>
   </div>
 );

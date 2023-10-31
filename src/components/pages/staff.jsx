@@ -1,5 +1,5 @@
 const Staff = () => (
-  <div className="page_content">
+  <div className="">
     <h1>This is the Staff members Pages</h1>
   </div>
 );

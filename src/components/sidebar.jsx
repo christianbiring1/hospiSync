@@ -15,6 +15,8 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import { NavLink, useLocation } from 'react-router-dom';
+
+import IconLink from './common/iconLink';
 import '../styles/sidebar.css';
 
 const Sidebar = () => {
@@ -33,60 +35,77 @@ const Sidebar = () => {
     opacity: '0.5',
   };
 
-  const menuItem = [
+  const iconStyle = {
+    width: '2rem',
+    height: 'auto',
+  };
+
+  const dashboard = [
     {
       path: '/',
-      icon: <DashboardIcon />,
+      icon: <DashboardIcon style={iconStyle} />,
       label: 'Dashboard',
     },
+  ];
+
+  const CRM = [
     {
       path: '/patients',
-      icon: <SickIcon />,
+      icon: <SickIcon style={iconStyle} />,
       label: 'Patients',
     },
     {
       path: '/staff',
-      icon: <GroupsIcon />,
+      icon: <GroupsIcon style={iconStyle} />,
       label: 'Staffs',
     },
     {
       path: '/finances',
-      icon: <AccountBalanceIcon />,
+      icon: <AccountBalanceIcon style={iconStyle} />,
       label: 'Finances',
     },
     {
       path: '/activities',
-      icon: <EventAvailableIcon />,
+      icon: <EventAvailableIcon style={iconStyle} />,
       label: 'Events',
     },
+  ];
+
+  const paremetres = [
     {
       path: '/profil',
-      icon: <PersonIcon />,
+      icon: <PersonIcon style={iconStyle} />,
       label: 'Profil',
     },
     {
       path: '/settings',
-      icon: <SettingsIcon />,
+      icon: <SettingsIcon style={iconStyle} />,
       label: 'Settings',
     },
+  ];
+
+  const getHelp = [
     {
       path: '/faqs',
-      icon: <HelpOutlineIcon />,
-      label: 'FAQS and Announcements',
+      icon: <HelpOutlineIcon style={iconStyle} />,
+      label: 'FAQS',
     },
     {
       path: '/support',
-      icon: <SupportAgentIcon />,
+      icon: <SupportAgentIcon style={iconStyle} />,
       label: 'Get Help',
     },
     {
       path: '/guide',
-      icon: <LocalLibraryIcon />,
+      icon: <LocalLibraryIcon style={iconStyle} />,
       label: 'User HandBook',
     },
+  ];
+
+  const login = [
     {
       path: '/login',
-      icon: <LogoutTwoToneIcon />,
+      icon: <LogoutTwoToneIcon style={iconStyle} />,
       label: 'LogOut',
     },
   ];
@@ -120,16 +139,44 @@ const Sidebar = () => {
             <p className="email">username@gmail.com</p>
           </div>
         </div>
-        {menuItem.map((item) => (
-          <NavLink to={item.path} key={item.label} className={({ isActive }) => (isActive ? 'active' : '')}>
-            <ul className={isOpen ? '' : 'active'}>
-              <li className={isOpen ? '' : 'active'}>
-                <span className="icon">{item.icon}</span>
-                <span className="label" style={{ display: isOpen ? 'inline' : 'none' }}>{item.label}</span>
-              </li>
-            </ul>
-          </NavLink>
-        ))}
+        <div className="navigation_container">
+          <div>
+            {dashboard.map((item) => (
+              <IconLink key={item.label} item={item} isOpen={isOpen} />
+            ))}
+          </div>
+          <div>
+            <p>CRM</p>
+            <div>
+              {CRM.map((item) => (
+                <IconLink key={item.label} item={item} isOpen={isOpen} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <p>SETTINGS</p>
+            <div>
+              {paremetres.map((item) => (
+                <IconLink key={item.label} item={item} isOpen={isOpen} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <p>ASSISTANCE</p>
+            <div>
+              {getHelp.map((item) => (
+                <IconLink key={item.label} item={item} isOpen={isOpen} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <div>
+              {login.map((item) => (
+                <IconLink key={item.label} item={item} isOpen={isOpen} />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

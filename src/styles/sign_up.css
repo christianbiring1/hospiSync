@@ -2,6 +2,11 @@
 .login_container {
   display: grid;
   grid-template-columns: 75% 25%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   align-items: center;
   gap: 2rem;
   height: 100vh;

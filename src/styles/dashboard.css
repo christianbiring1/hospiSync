@@ -1,6 +1,8 @@
 .dashboard_container {
-  display: grid;
-  grid-template-columns: 78% 20%;
+  /* display: grid; */
+  display: flex;
+  justify-content: space-evenly;
+  /* grid-template-columns: 78% 20%; */
   gap: 2rem;
 }
 
@@ -13,16 +15,8 @@
   padding: 2rem 1rem;
 }
 
-.room-nav {
-}
-
-.room-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-.room-nav ul li {
+.room-nav span {
   font-size: 1.3rem;
-  margin: 1rem 0;
-  padding: 0;
+  margin: 1rem 0.7rem;
+  display: inline-block;
 }

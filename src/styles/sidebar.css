@@ -30,6 +30,10 @@
   padding: 3rem 1rem;
 }
 
+.sidebar.active .profil_container {
+  padding: 1rem;
+}
+
 .logo_container .title {
   font-size: 3rem;
   padding: 0;
@@ -88,7 +92,7 @@ ul li {
 
 ul li.active {
   justify-content: center;
-  transition: 0.6s all;
+  /* transition: 0.6s all; */
 }
 
 ul li:hover {

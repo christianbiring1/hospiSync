@@ -1,6 +1,8 @@
 import '../../styles/page_head.css';
 
-const PageHead = ({ icon, name, onAdmit }) => (
+const PageHead = ({
+  icon, name, register, onAdmit, bill
+}) => (
   <div className="page_head">
     <div className="left">
       <div className="back_icon">{icon}</div>
@@ -13,26 +15,25 @@ const PageHead = ({ icon, name, onAdmit }) => (
       </div>
     </div>
     <div className="right">
-      {name === 'dashboard' ? (
-        <>
-          <button
-            type="button"
-            onClick={onAdmit}
-            style={{
-              backgroundColor: '#fff', color: '#000', borderColor: '#000',
-            }}
-          >
-            Register
-          </button>
-          <button
-            type="button"
-            onClick={onAdmit}
-            style={{ backgroundColor: '#1b449e', color: '#fff' }}
-          >
-            Bill
-          </button>
-        </>
-
+      {register ? (
+        <button
+          type="button"
+          onClick={onAdmit}
+          style={{
+            backgroundColor: '#fff', color: '#000', borderColor: '#000',
+          }}
+        >
+          Register
+        </button>
+      ) : ''}
+      {bill ? (
+        <button
+          type="button"
+          onClick={onAdmit}
+          style={{ backgroundColor: '#1b449e', color: '#fff' }}
+        >
+          Bill
+        </button>
       ) : ''}
     </div>
   </div>

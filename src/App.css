@@ -12,10 +12,7 @@ body {
 .page_content {
   min-height: 100vh;
   margin-left: calc(8rem + 14rem);
-
-  /* width: 100vw; */
   /* background-color: #f5f7fb; */
-  z-index: 1;
 }
 
 .page_content button {

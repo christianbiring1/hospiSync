@@ -1,8 +1,8 @@
 .sidebar {
   background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
   padding: 3rem 0.5rem;
   height: 100vh;
   overflow-y: auto;
@@ -11,7 +11,7 @@
 }
 
 .sidebar.active {
-  width: --sidebar-space;
+  width: 9rem;
   padding: 3rem 0;
   transition: 0.6s all;
 }

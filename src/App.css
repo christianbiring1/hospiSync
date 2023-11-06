@@ -6,13 +6,25 @@ body {
 }
 
 .app_container {
-  /* display: flex; */
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.navigation_content {
+  position: relative;
+  /* background-color: red; */
+  /* height: 100vh; */
+  /* width: 100px; */
+  /* z-index: 999999; */
 }
 
 .page_content {
   min-height: 100vh;
-  margin-left: calc(8rem + 14rem);
-  /* background-color: #f5f7fb; */
+  flex: 1;
+  padding-left: 2rem;
+  /* margin-left: calc(8rem + 14rem); */
+  background-color: #f5f7fb;
 }
 
 .page_content button {

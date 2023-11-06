@@ -16,7 +16,9 @@ import Guide from './components/pages/guide';
 function App() {
   return (
     <div className="app_container">
-      <Sidebar />
+      <div className="navigation_content">
+        <Sidebar />
+      </div>
       <div className="page_content">
         <Routes>
           <Route path="/login" element={<SignUpForm />} />

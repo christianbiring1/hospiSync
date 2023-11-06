@@ -12,6 +12,7 @@ const DashBoard = () => {
         icon="<--"
         register="register"
         bill="bill"
+        homeLink="Home"
         onAdmit={handleAdmit}
       />
       <di className="rooms_container">

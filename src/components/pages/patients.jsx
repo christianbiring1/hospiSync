@@ -10,10 +10,12 @@ const Patients = () => {
           name="Patient"
           icon="<--"
           register="register"
+          homeLink="Home"
+          linkName="patients"
           onAdmit={handleAdmit}
         />
       </div>
-      <Register />
+      {/* <Register /> */}
     </>
   );
 };

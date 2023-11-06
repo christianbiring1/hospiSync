@@ -22,8 +22,9 @@
   justify-content: center;
 }
 
-.links {
+.links a{
   opacity: .5;
+  color: black;
 }
 
 .links .home::after {

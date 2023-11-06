@@ -1,7 +1,23 @@
-const Support = () => (
-  <div className="">
-    <h1>This is the Customer Support Pages</h1>
-  </div>
-);
+import PageHead from '../common/pageHead';
+
+const Support = () => {
+  const handleAdmit = () => console.log('Admit');
+
+  return (
+    <>
+      <div className="dashboard_container">
+        <PageHead
+          name="Support"
+          icon="<--"
+          register="register"
+          homeLink="Home"
+          linkName="support"
+          onAdmit={handleAdmit}
+        />
+      </div>
+      {/* <Register /> */}
+    </>
+  );
+};
 
 export default Support;

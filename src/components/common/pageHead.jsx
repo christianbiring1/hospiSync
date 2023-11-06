@@ -1,7 +1,8 @@
 import '../../styles/page_head.css';
+import { Link } from 'react-router-dom';
 
 const PageHead = ({
-  icon, name, register, onAdmit, bill
+  icon, name, register, onAdmit, bill, homeLink, linkName
 }) => (
   <div className="page_head">
     <div className="left">
@@ -9,8 +10,8 @@ const PageHead = ({
       <div>
         <h2 className="page_name">{name}</h2>
         <p className="links">
-          <span className="home">Home</span>
-          <span className="name">Name</span>
+          <Link to="/" className="home">{homeLink}</Link>
+          <Link to={`/${linkName}`} className="name">{linkName}</Link>
         </p>
       </div>
     </div>

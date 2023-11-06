@@ -1,4 +1,4 @@
-import PageHead from "../common/pageHead";
+import PageHead from '../common/pageHead';
 
 const Finances = () => {
   const handleAdmit = () => console.log('Admit');

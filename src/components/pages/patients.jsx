@@ -1,5 +1,4 @@
 import PageHead from '../common/pageHead';
-import Register from '../utils/register';
 
 const Patients = () => {
   const handleAdmit = () => console.log('Admit');

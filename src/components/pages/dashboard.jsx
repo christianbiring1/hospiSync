@@ -15,17 +15,17 @@ const DashBoard = () => {
         homeLink="Home"
         onAdmit={handleAdmit}
       />
-      <di className="rooms_container">
+      <div className="rooms_container">
         <div className="room-head">
           <span>Icon</span>
-          <h2>Patient's rooms</h2>
+          <h2>Patient&apos;s rooms</h2>
         </div>
         <div className="room-nav">
           <span><NavLink to="">Level 1</NavLink></span>
           <span><NavLink to="">Level 2</NavLink></span>
           <span><NavLink to="">Level 3</NavLink></span>
         </div>
-      </di>
+      </div>
     </div>
   );
 };

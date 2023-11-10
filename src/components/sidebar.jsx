@@ -14,7 +14,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import { NavLink, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import IconLink from './common/iconLink';
 import '../styles/sidebar.css';
@@ -145,7 +145,7 @@ const Sidebar = () => {
               <IconLink key={item.label} item={item} isOpen={isOpen} />
             ))}
           </div>
-          <div>
+          <div className="nav_group">
             <p>CRM</p>
             <div>
               {CRM.map((item) => (
@@ -153,7 +153,7 @@ const Sidebar = () => {
               ))}
             </div>
           </div>
-          <div>
+          <div className="nav_group">
             <p>SETTINGS</p>
             <div>
               {paremetres.map((item) => (
@@ -161,7 +161,7 @@ const Sidebar = () => {
               ))}
             </div>
           </div>
-          <div>
+          <div className="nav_group">
             <p>ASSISTANCE</p>
             <div>
               {getHelp.map((item) => (

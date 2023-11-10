@@ -4,7 +4,7 @@ import Sidebar from './components/sidebar';
 import Activities from './components/pages/activities';
 import DashBoard from './components/pages/dashboard';
 import Finances from './components/pages/finances';
-import Patients from './components/pages/patients';
+import Patients from './components/pages/patients/patients';
 import './App.css';
 import Staff from './components/pages/staff';
 import Profil from './components/pages/profil';

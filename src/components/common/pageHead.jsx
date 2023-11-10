@@ -1,12 +1,14 @@
-import '../../styles/page_head.css';
 import { Link } from 'react-router-dom';
+import ArrowBack from '@mui/icons-material/ArrowBack';
+import '../../styles/page_head.css';
 
 const PageHead = ({
-  icon, name, register, onAdmit, bill, homeLink, linkName
+  icon, name, register, onAdmit, bill, homeLink, linkName,
 }) => (
   <div className="page_head">
     <div className="left">
-      <div className="back_icon">{icon}</div>
+      {name !== 'Dashboard'
+        ? <div className="back_icon"><ArrowBack style={{ width: '3rem', color: 'dodgerblue' }} /></div> : ''}
       <div>
         <h2 className="page_name">{name}</h2>
         <p className="links">

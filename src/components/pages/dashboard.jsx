@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+// import ArrowBack from '@mui/icons-material/ArrowBack';
 
 import PageHead from '../common/pageHead';
 import '../../styles/dashboard.css';
@@ -9,7 +10,7 @@ const DashBoard = () => {
     <div className="dashboard_container">
       <PageHead
         name="Dashboard"
-        icon="<--"
+        // icon={<ArrowBack />}
         register="register"
         bill="bill"
         homeLink="Home"

@@ -4,22 +4,36 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  padding: 3rem 0;
 }
 
 .left {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 }
 
+.page_name {
+  color: #1b449e;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
 .back_icon {
-  width: 40px;
-  height: 40px;
-  border: 1px solid red;
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.back_icon:hover {
+  /* opacity: .7; */
+  border-color: #1b449e;
 }
 
 .links a{

@@ -22,7 +22,7 @@ function App() {
       <div className="page_content">
         <Routes>
           <Route path="/login" element={<SignUpForm />} />
-          <Route path="/patients" element={<Patients />} />
+          <Route path="/patients/*" element={<Patients />} />
           <Route path="/staff" element={<Staff />} />
           <Route path="/finances" element={<Finances />} />
           <Route path="/activities" element={<Activities />} />

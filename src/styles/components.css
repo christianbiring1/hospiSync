@@ -1,0 +1,36 @@
+.component {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem 2rem 2rem ;
+}
+
+.navigations {
+  /* width: 8rem; */
+  padding: 2rem;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.component-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.icons-container input {
+  height: 3rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem;
+}

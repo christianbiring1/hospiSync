@@ -1,5 +1,11 @@
+import { Routes, Route } from 'react-router-dom';
 import PageHead from '../../common/pageHead';
 import IconLink from '../../common/iconLink';
+import AllPatients from './components/allPatients';
+import Maternel from './components/maternelle';
+import Primary from './components/primary';
+
+import '../../../styles/components.css';
 
 const Patients = () => {
   const handleAdmit = () => console.log('Admit');
@@ -34,9 +40,18 @@ const Patients = () => {
         />
       </div>
       <div className="component">
-        {navbar.map((item) => (
-          <IconLink key={item.label} item={item} isOpen />
-        ))}
+        <div className="navigations">
+          {navbar.map((item) => (
+            <IconLink key={item.label} item={item} isOpen />
+          ))}
+        </div>
+        <div className="content">
+          <Routes>
+            <Route path="/maternel" element={<Maternel />} />
+            <Route path="/primary" element={<Primary />} />
+            <Route path="/" exact element={<AllPatients />} />
+          </Routes>
+        </div>
       </div>
       {/* <Register /> */}
     </>

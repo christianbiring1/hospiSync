@@ -5,12 +5,13 @@
 }
 
 .navigations {
-  /* width: 8rem; */
+  width: 25%;
   padding: 2rem;
 }
 
 .content {
   flex: 1;
+  background-color: #fff;
   padding: 2rem;
   font-size: 1.6rem;
 }
@@ -20,16 +21,26 @@
   justify-content: space-between;
 }
 
-.icons-container {
+.component-top h3 {
+  color: red;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.icons-container, .top-right {
   display: flex;
   align-items: center;
   gap: 2rem;
   justify-content: space-between;
 }
 
-.icons-container input {
-  height: 3rem;
-  margin-right: 1rem;
+.top-right {
+  width: 45%;
+}
+
+.top-right input {
+  height: 3.5rem;
+  /* width: 40%; */
   font-size: 1.5rem;
   color: #666;
   padding: 1rem;

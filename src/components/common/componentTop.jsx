@@ -3,11 +3,15 @@ const ComponentTop = ({ title, searchBox }) => (
     <div className="top">
       <h3>{title}</h3>
     </div>
-    <div className="icons-container">
-      {searchBox}
-      <p>Imprimer</p>
-      <p>.pdf</p>
-      <p>.xls</p>
+    <div className="top-right">
+      <div>
+        {searchBox}
+      </div>
+      <div className="icons-container">
+        <span>Imprimer</span>
+        <span>.pdf</span>
+        <span>.xls</span>
+      </div>
     </div>
   </div>
 );

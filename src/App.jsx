@@ -5,13 +5,13 @@ import Activities from './components/pages/activities';
 import DashBoard from './components/pages/dashboard';
 import Finances from './components/pages/finances';
 import Patients from './components/pages/patients/patients';
-import './App.css';
-import Staff from './components/pages/staff';
+import Staff from './components/pages/staffs/staff';
 import Profil from './components/pages/profil';
 import Settings from './components/pages/settings';
 import FAQs from './components/pages/FAQs';
 import Support from './components/pages/support';
 import Guide from './components/pages/guide';
+import './App.css';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<SignUpForm />} />
           <Route path="/patients/*" element={<Patients />} />
-          <Route path="/staff" element={<Staff />} />
+          <Route path="/staff/*" element={<Staff />} />
           <Route path="/finances" element={<Finances />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/profil" element={<Profil />} />

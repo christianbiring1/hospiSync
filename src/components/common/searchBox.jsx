@@ -2,7 +2,7 @@ const SearchBox = () => (
   <input
     className="form-control"
     type="text"
-    placeholder="search..."
+    placeholder="Search..."
   />
 );
 

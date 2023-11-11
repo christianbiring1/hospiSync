@@ -2,41 +2,45 @@ import { Routes, Route } from 'react-router-dom';
 import PageHead from '../../common/pageHead';
 import IconLink from '../../common/iconLink';
 
-import AllPatients from './components/allPatients';
-import Maternel from './components/maternelle';
-import Primary from './components/primary';
+import People from './components/personal';
+import Tasks from './components/tasks';
+import Repartition from './components/repartition';
+import Schedule from './components/schedule';
 
-import '../../../styles/components.css';
-
-const Patients = () => {
-  const handleAdmit = () => console.log('Admit');
+const Staff = () => {
   const navbar = [
     {
-      path: '/patients',
+      path: '/staff',
       icon: 'Icon',
-      label: 'Tous',
+      label: 'Team',
     },
     {
-      path: '/patients/maternel',
+      path: '/staff/chores',
       icon: 'Icon',
-      label: 'Maternel',
+      label: 'Chores',
     },
     {
-      path: '/patients/primary',
+      path: '/staff/repartitions',
       icon: 'Icon',
-      label: 'Primary',
+      label: 'Repartition',
+    },
+    {
+      path: '/staff/schedule',
+      icon: 'Icon',
+      label: 'Schedule',
     },
   ];
 
+  const handleAdmit = () => console.log('Admit');
   return (
     <>
       <div className="dashboard_container">
         <PageHead
-          name="Patient"
+          name="Staff"
           icon="<--"
           register="register"
           homeLink="Home"
-          linkName="patients"
+          linkName="staff"
           onAdmit={handleAdmit}
         />
       </div>
@@ -48,9 +52,10 @@ const Patients = () => {
         </div>
         <div className="content">
           <Routes>
-            <Route path="/maternel" element={<Maternel />} />
-            <Route path="/primary" element={<Primary />} />
-            <Route path="/" exact element={<AllPatients />} />
+            <Route path="/chores" element={<Tasks />} />
+            <Route path="/repartitions" exact element={<Repartition />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/" element={<People />} />
           </Routes>
         </div>
       </div>
@@ -59,4 +64,4 @@ const Patients = () => {
   );
 };
 
-export default Patients;
+export default Staff;

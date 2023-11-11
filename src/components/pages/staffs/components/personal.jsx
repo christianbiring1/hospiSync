@@ -2,15 +2,15 @@ import React from 'react';
 import ComponentTop from '../../../common/componentTop';
 import SearchBox from '../../../common/searchBox';
 
-const Primary = () => {
-  const patients = 'all patients';
-  console.log(patients);
+const People = () => {
+  const people = 'all people';
+  console.log(people);
 
   return (
     <div className="patients-container">
-      <ComponentTop title="List of Patients from Primary" searchBox={<SearchBox />} />
+      <ComponentTop title="List of Staff" searchBox={<SearchBox />} />
     </div>
   );
 };
 
-export default Primary;
+export default People;

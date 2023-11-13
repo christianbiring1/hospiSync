@@ -1,4 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
+import GroupsIcon from '@mui/icons-material/Groups';
+import EventAvailable from '@mui/icons-material/EventAvailable';
+import Task from '@mui/icons-material/Task';
+
 import PageHead from '../../common/pageHead';
 import IconLink from '../../common/iconLink';
 
@@ -8,15 +12,20 @@ import Repartition from './components/repartition';
 import Schedule from './components/schedule';
 
 const Staff = () => {
+  const iconStyle = {
+    width: '2rem',
+    height: 'auto',
+  };
+
   const navbar = [
     {
       path: '/staff',
-      icon: 'Icon',
+      icon: <GroupsIcon style={iconStyle} />,
       label: 'Team',
     },
     {
       path: '/staff/chores',
-      icon: 'Icon',
+      icon: <Task />,
       label: 'Chores',
     },
     {
@@ -26,7 +35,7 @@ const Staff = () => {
     },
     {
       path: '/staff/schedule',
-      icon: 'Icon',
+      icon: <EventAvailable style={iconStyle} />,
       label: 'Schedule',
     },
   ];

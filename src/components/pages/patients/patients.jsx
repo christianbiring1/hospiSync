@@ -1,4 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
+import Groups from '@mui/icons-material/Groups';
+import PinDrop from '@mui/icons-material/PinDrop';
+
 import PageHead from '../../common/pageHead';
 import IconLink from '../../common/iconLink';
 
@@ -9,16 +12,21 @@ import Primary from './components/primary';
 import '../../../styles/components.css';
 
 const Patients = () => {
+  const iconStyle = {
+    width: '2rem',
+    height: 'auto',
+  };
+
   const handleAdmit = () => console.log('Admit');
   const navbar = [
     {
       path: '/patients',
-      icon: 'Icon',
+      icon: <Groups style={iconStyle} />,
       label: 'Tous',
     },
     {
       path: '/patients/maternel',
-      icon: 'Icon',
+      icon: <PinDrop />,
       label: 'Maternel',
     },
     {

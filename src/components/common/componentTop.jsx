@@ -1,3 +1,7 @@
+import PictureAsPdfOutlined from '@mui/icons-material/PictureAsPdfOutlined';
+import FileCopy from '@mui/icons-material/FileCopy';
+import ImportContacts from '@mui/icons-material/ImportContacts';
+
 const ComponentTop = ({ title, searchBox }) => (
   <div className="component-top">
     <div className="top">
@@ -8,9 +12,9 @@ const ComponentTop = ({ title, searchBox }) => (
         {searchBox}
       </div>
       <div className="icons-container">
-        <span>Imprimer</span>
-        <span>.pdf</span>
-        <span>.xls</span>
+        <span><ImportContacts /></span>
+        <span><PictureAsPdfOutlined /></span>
+        <span><FileCopy /></span>
       </div>
     </div>
   </div>

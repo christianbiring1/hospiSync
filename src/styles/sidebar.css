@@ -107,6 +107,15 @@ a.active ul li {
   color: #2645b7;
 }
 
+a ul li .icon {
+  color: #666;
+  transition: background-color color 1s;
+}
+
+a.active ul li .icon {
+  color: #2645b7;
+}
+
 .sidebar.active .nav_group > p {
   overflow: hidden;
   text-overflow: ellipsis;

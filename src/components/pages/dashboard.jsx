@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-// import ArrowBack from '@mui/icons-material/ArrowBack';
+import { RoomService } from '@mui/icons-material';
 
 import PageHead from '../common/pageHead';
 import '../../styles/dashboard.css';
@@ -10,7 +10,6 @@ const DashBoard = () => {
     <div className="dashboard_container">
       <PageHead
         name="Dashboard"
-        // icon={<ArrowBack />}
         register="register"
         bill="bill"
         homeLink="Home"
@@ -18,7 +17,7 @@ const DashBoard = () => {
       />
       <div className="rooms_container">
         <div className="room-head">
-          <span>Icon</span>
+          <span><RoomService /></span>
           <h2>Patient&apos;s rooms</h2>
         </div>
         <div className="room-nav">

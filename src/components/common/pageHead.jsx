@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import ArrowBack from '@mui/icons-material/ArrowBack';
+import { Home } from '@mui/icons-material';
+
 import '../../styles/page_head.css';
 
 const PageHead = ({
@@ -8,7 +10,7 @@ const PageHead = ({
   <div className="page_head">
     <div className="left">
       {name !== 'Dashboard'
-        ? <div className="back_icon"><ArrowBack style={{ width: '3rem', color: 'dodgerblue' }} /></div> : ''}
+        ? <div className="back_icon"><ArrowBack style={{ width: '3rem', color: 'dodgerblue' }} /></div> : <Home fontSize="large" color="primary" />}
       <div>
         <h2 className="page_name">{name}</h2>
         <p className="links">

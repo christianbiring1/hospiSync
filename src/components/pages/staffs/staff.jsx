@@ -62,13 +62,12 @@ const Staff = () => {
         <div className="content">
           <Routes>
             <Route path="/chores" element={<Tasks />} />
-            <Route path="/repartitions" exact element={<Repartition />} />
+            <Route path="/repartitions" element={<Repartition />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/" element={<People />} />
           </Routes>
         </div>
       </div>
-      {/* <Register /> */}
     </>
   );
 };

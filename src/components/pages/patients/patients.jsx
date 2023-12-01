@@ -58,11 +58,10 @@ const Patients = () => {
           <Routes>
             <Route path="/maternel" element={<Maternel />} />
             <Route path="/primary" element={<Primary />} />
-            <Route path="/" exact element={<AllPatients />} />
+            <Route path="/" element={<AllPatients />} />
           </Routes>
         </div>
       </div>
-      {/* <Register /> */}
     </>
   );
 };

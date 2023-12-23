@@ -1,5 +1,7 @@
 import PageHead from '../common/pageHead';
 
+import Register from '../utils/register';
+
 const Finances = () => {
   const handleAdmit = () => console.log('Admit');
   return (
@@ -14,7 +16,7 @@ const Finances = () => {
           onAdmit={handleAdmit}
         />
       </div>
-      {/* <Register /> */}
+      <Register />
     </>
   );
 };

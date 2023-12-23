@@ -11,6 +11,7 @@ import Settings from './components/pages/settings';
 import FAQs from './components/pages/FAQs';
 import Support from './components/pages/support';
 import Guide from './components/pages/guide';
+
 import './App.css';
 
 function App() {
